@@ -8,56 +8,61 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="post">
-		<lable for=name>Name</lable>
-		<input type="text" name="name" id="name">
-		<br>
-		<br>
-		<lable for=email>Email</lable>
-		<input type="email" name="email" id="email">
-		<br>
-		<br>
-		
-		<input type="radio" id="gender_m" name="gender_m">
-		<lable for=gender_m>Male</lable>
-		<br>
-		
-		<input type="radio" id="gender_f" name="gender_f">
-		<lable for=gender_f>Female</lable>
-		<br>
-		<br>
-		<label for="car">--Please choose an option--</label>
+	 <form method="post">
+       
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <br><br>
 
-<select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-		<br>
-		<br>
-		<lable for="age">Age</lable>
-		<input type="number" name="age" id="age">
-		<br>
-		<br>
-		<lable for="dob">DOB</lable>
-		<input type="date" name="dob" id="dob">
-		<br>
-		<br>
-		<lable for="tel">xxx-xxx-xxxx</lable>
-		<input type="tel" name="tel" id="tel">
-		<br>
-		<br>
-		<lable for="password">Password</lable>
-		<input type="password" name="password" id="password">
-		<br>
-		<br>
-		<lable for="tos">I agree to the TOS</lable>
-		<input type="checkbox" name="tos" id="tos">
-		<br><br>
-		<input type="submit">
-		
-	</form>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <br><br>
+
+      
+        <label for="gender_m">Gender:</label>
+        <input type="radio" id="gender_m" name="gender" value="male" required> Male
+        <input type="radio" id="gender_f" name="gender" value="female"> Female
+        <br><br>
+
+       
+        <label for="cars">Car Brands:</label>
+        <select id="cars" name="cars" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="ford">Ford</option>
+            <option value="bmw">BMW</option>
+        </select>
+        <br><br>
+
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+       
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+        <br><br>
+
+     
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <br><br>
+
+       
+        <input type="checkbox" id="tos" name="tos" required>
+        <label for="tos">I agree to the TOS</label>
+        <br><br>
+
+    
+        <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
